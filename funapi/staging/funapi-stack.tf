@@ -1,5 +1,5 @@
 resource "aws_opsworks_stack" "stack" {
-  name = "funapi-staging"
+  name = "funapi-2-staging"
   region = "us-east-1"
   service_role_arn = "arn:aws:iam::794759568553:role/aws-opsworks-service-role"
   default_instance_profile_arn = "arn:aws:iam::794759568553:instance-profile/aws-opsworks-ec2-role"
