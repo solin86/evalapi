@@ -7,7 +7,7 @@ resource "aws_opsworks_stack" "stack" {
   default_availability_zone = "us-east-1a"
   configuration_manager_name = "Chef"
   configuration_manager_version = "11.10"
-  use_custom_cookbooks = true
+  use_custom_cookbooks = false
   use_opsworks_security_groups = true
   default_os = "Ubuntu 14.04 LTS"
 }
