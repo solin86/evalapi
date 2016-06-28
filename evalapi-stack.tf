@@ -12,7 +12,8 @@ resource "aws_opsworks_stack" "stack" {
   default_os = "Ubuntu 14.04 LTS"
 }
 
-
 provider "aws" {
   region = "us-east-1"
+  access_key = "${var.aws_dev_access_key}"
+  secret_key = "${var.aws_dev_secret_key}"
 }
