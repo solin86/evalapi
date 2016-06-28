@@ -11,3 +11,8 @@ resource "aws_opsworks_stack" "stack" {
   use_opsworks_security_groups = true
   default_os = "Ubuntu 14.04 LTS"
 }
+
+
+provider "aws" {
+  region = "us-east-1"
+}
